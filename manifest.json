@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Image Format Saver",
+  "version": "1.0",
+  "permissions": [
+    "contextMenus",
+    "downloads",
+    "webRequest"
+  ],
+  "host_permissions": [
+    "*://*.giphy.com/*",
+    "*://*.gph.is/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ]
+}
