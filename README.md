@@ -1,6 +1,6 @@
-# bgpoof Image Saver
+# Browser Image Saver Chrome Extension
 
-A Chrome extension for saving images and background removed copies of them. Right-click any image and open the **bgpoof Image Saver** menu to save the original file, a transparent PNG cutout made by [bgpoof](https://bgpoof.com/), or both. Images are saved in their true format, so a GIF that a site serves as WebP still lands on your machine as a GIF.
+A Chrome extension for saving images and background removed copies of them. Right-click any image and open the **Browser Image Saver** menu to save the original file, a transparent PNG cutout made by [bgpoof](https://bgpoof.com/), or both. Images are saved in their true format, so a GIF that a site serves as WebP still lands on your machine as a GIF.
 
 ## Demo
 

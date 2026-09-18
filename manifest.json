@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "bgpoof Image Saver",
+  "name": "Browser Image Saver",
   "version": "1.0",
   "description": "Right-click an image to save the original and a background removed PNG made with bgpoof.com.",
   "permissions": [

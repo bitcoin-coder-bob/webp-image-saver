@@ -28,7 +28,7 @@ chrome.runtime.onInstalled.addListener(async () => {
   await chrome.contextMenus.removeAll();
   chrome.contextMenus.create({
     id: PARENT_MENU_ID,
-    title: "bgpoof Image Saver",
+    title: "Browser Image Saver",
     contexts: ["image"]
   });
   for (const [id, { title }] of Object.entries(MENU_ACTIONS)) {
@@ -284,7 +284,7 @@ function notify(message) {
   chrome.notifications.create({
     type: "basic",
     iconUrl: "icons/icon128.png",
-    title: "bgpoof Image Saver",
+    title: "Browser Image Saver",
     message
   });
 }
