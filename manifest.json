@@ -1,15 +1,16 @@
 {
   "manifest_version": 3,
-  "name": "Image Format Saver",
+  "name": "bgpoof Image Saver",
   "version": "1.0",
+  "description": "Right-click an image to save the original and a background removed PNG made with bgpoof.com.",
   "permissions": [
     "contextMenus",
     "downloads",
-    "webRequest"
+    "notifications",
+    "offscreen"
   ],
   "host_permissions": [
-    "*://*.giphy.com/*",
-    "*://*.gph.is/*"
+    "<all_urls>"
   ],
   "background": {
     "service_worker": "background.js"
@@ -21,7 +22,22 @@
       ],
       "js": [
         "content.js"
-      ]
+      ],
+      "all_frames": true
+    },
+    {
+      "matches": [
+        "https://bgpoof.com/*"
+      ],
+      "js": [
+        "bgpoof-frame.js"
+      ],
+      "all_frames": true
     }
-  ]
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
 }
